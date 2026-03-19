@@ -139,11 +139,11 @@ export default function Home() {
             alt="Koenigsegg Interior"
             className="w-full h-full object-cover  mix-blend-multiply"
           />
-          <div className="absolute top-1/2 right-12 -translate-y-1/1 z-10 text-right max-w-md text-white">
+          <div className="absolute top-[20%] right-12 -translate-y-1/2 z-10 text-right max-w-md text-white">
             <p className="text-[11px] tracking-[0.4em] uppercase mb-4 font-bold opacity-40">
               Mechanical Anatomy
             </p>
-            <h5 className="text-5xl md:text-6xl italic leading-none">
+            <h5 className="text-5xl md:text-6xl italic leading-none [text-shadow:0_20px_26px_rgba(0,0,0,0.68)]">
               Precision beyond the visible.
             </h5>
           </div>
