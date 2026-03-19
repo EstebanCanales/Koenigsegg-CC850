@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { Playfair_Display } from 'next/font/google';
 import './globals.css';
 
-const playfair = Playfair_Display({ 
-  subsets: ['latin'], 
+const playfair = Playfair_Display({
+  subsets: ['latin'],
   variable: '--font-playfair',
   display: 'swap',
 });
@@ -11,6 +11,11 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: 'Koenigsegg CC850 | Pure Elegance',
   description: 'The visceral return of mechanical purity.',
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  },
 };
 
 export default function RootLayout({
