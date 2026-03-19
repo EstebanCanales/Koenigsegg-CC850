@@ -1,0 +1,73 @@
+@import 'tailwindcss';
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: rgba(0, 0, 0, 0.08);
+  }
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-primary: #111111;
+  --bg-hero: #F3F4F3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--font-playfair), serif;
+}
+
+::selection {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+[data-scroll-reveal] {
+  opacity: 0;
+  filter: blur(12px);
+  transition:
+    opacity 700ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 1100ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, filter;
+}
+
+[data-scroll-reveal].is-visible {
+  opacity: 1;
+  filter: blur(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-scroll-reveal] {
+    opacity: 1;
+    filter: none;
+    transition: none;
+  }
+}
+
+@layer utilities {
+  .font-serif { 
+    font-family: var(--font-playfair), serif; 
+  }
+}
+
+/* Minimal Scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #111111;
+}
