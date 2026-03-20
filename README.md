@@ -10,10 +10,6 @@ _We build machines that possess a soul, for drivers who understand that mechanic
 
 ![Koenigsegg CC850](./public/Demo.jpg)
 
-<br />
-
-**KOENIGSEGG × CC850**
-
 </div>
 
 <br/>
@@ -27,6 +23,10 @@ _We build machines that possess a soul, for drivers who understand that mechanic
 A machine born from obsession. 1,385 hp on E85. A transmission that acts as a 6-speed manual and a 9-speed automatic — simultaneously. A legacy pressed into carbon fiber and titanium. This experience was built to make you feel that — not just read it.
 
 Scroll. And understand.
+
+---
+
+<video src="./public/Hero-video.mp4" width="100%"></video>
 
 ---
 
@@ -46,18 +46,12 @@ Scroll. And understand.
 
 <br />
 
+
 ---
 
 ### Built with
 
 `Next.js 16` · `React 19` · `TypeScript 5` · `Tailwind CSS v4`
-
-<br />
-
-```bash
-npm install
-npm run dev
-```
 
 ---
 
