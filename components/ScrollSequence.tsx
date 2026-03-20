@@ -222,7 +222,7 @@ export default function ScrollSequence() {
   }, [isPrimed]);
 
   return (
-    <div ref={containerRef} className="relative w-full h-[1200vh] bg-[#F3F4F3]">
+    <div ref={containerRef} className="relative w-full h-[700vh] bg-[#F3F4F3]">
       <div className="sticky top-0 w-full h-screen overflow-hidden flex items-center justify-center">
         <canvas
           ref={canvasRef}
