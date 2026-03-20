@@ -25,7 +25,7 @@ A machine born from obsession. 1,385 hp on E85. A transmission that acts as a 6-
 Scroll. And understand.
 
 ---
-![Demo](./public/Hero-video.mp4)
+![Demo](./public/Demo.mp4)
 ---
 
 <br />
