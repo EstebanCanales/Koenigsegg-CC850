@@ -1,136 +1,71 @@
-# Koenigsegg CC850 Experience
+<div align="center">
 
-Landing inmersiva construida con **Next.js 16 + React 19 + Tailwind CSS v4**.
-El proyecto combina narrativa visual, secuencias de frames por scroll y bloques editoriales de alto contraste para presentar el universo CC850.
+# Not a car page. A declaration.
 
-## Características
+_We build machines that possess a soul, for drivers who understand that mechanical life is the ultimate luxury._
 
-- Experiencia single-page con secciones narrativas (`hero`, `heritage`, `invention`, `engineering`, `precision`, `chamber`, `specs`, `finality`).
-- Navegación sticky con barra de progreso de scroll.
-- Animaciones de aparición con `IntersectionObserver`.
-- Secciones de secuencia en canvas sincronizadas al scroll.
-- Diseño responsive (desktop + mobile).
-- Tipografía con `next/font` (Playfair Display).
+<br />
 
-## Optimización de imágenes (carga procedural)
+![Koenigsegg CC850](./public/Demo.jpg)
 
-Las secuencias de frames **no** se cargan todas de una vez.
+<br />
 
-En `ScrollSequence` y `DetailScroll` se implementó:
+**KOENIGSEGG × CC850**
 
-- Carga inicial rápida del primer frame.
-- Carga por ventana alrededor del frame objetivo (ahead/behind) durante el scroll.
-- `requestAnimationFrame` para render desacoplado del evento de scroll.
-- `IntersectionObserver` para pausar trabajo cuando la sección está fuera de viewport cercano.
-- Fallback al frame cargado más cercano si el frame exacto aún no está disponible.
-- Evicción de frames lejanos para controlar uso de memoria.
+</div>
 
-Resultado: mejor tiempo de arranque, menos picos de red y menor presión de memoria.
+<br/>
 
-## Stack
+---
 
-- `next@16.2.0`
-- `react@19.2.4`
-- `tailwindcss@4`
-- `typescript@5`
+## The CC850 doesn't celebrate 50 years of Koenigsegg.
 
-## Requisitos
+## It _is_ 50 years of Koenigsegg.
 
-- Node.js 20+
-- npm 10+ (o Bun, opcional)
+A machine born from obsession. 1,385 horsepower. A transmission that shouldn't exist. A legacy pressed into carbon fiber and titanium. This experience was built to make you feel that — not just read it.
 
-## Instalación
+Scroll. And understand.
+
+---
+
+<br />
+
+### What lives inside
+
+**Heritage** — Where it all began. The story of a boy who refused to accept impossibility.
+
+**Engineering Emotion** — The CC850 is half resurrection, half reinvention. Every number on screen was earned on track.
+
+**The Aerodynamic Blueprint** — Form isn't decoration here. Every curve has a coefficient.
+
+**Precision Beyond the Possible** — Stillness under load. Control at the edge of physics.
+
+**Allocated.** — 50 units. Each one spoken for. This page is for everyone else.
+
+<br />
+
+---
+
+### Built with
+
+`Next.js 16` · `React 19` · `TypeScript 5` · `Tailwind CSS v4`
+
+<br />
 
 ```bash
 npm install
+npm run dev
 ```
 
-## Scripts
+---
 
-```bash
-npm run dev        # Desarrollo (webpack)
-npm run dev:turbo  # Desarrollo (turbopack)
-npm run build      # Build de producción
-npm run start      # Servidor de producción
-npm run lint       # Lint (ver nota abajo)
-```
+<div align="center">
 
-### Nota sobre lint en Next 16
+_The difference between a car and a Koenigsegg_
+_is the same as the difference between existing and meaning something._
 
-En este proyecto, `npm run lint` apunta a `next lint`, pero en Next 16 ese flujo puede requerir ajuste.
-Si falla, usa ESLint directamente o actualiza el script de lint según tu setup.
+<br />
 
-## Estructura del proyecto
+**© Koenigsegg CC850 — Experience**
 
-```text
-app/
-  globals.css
-  layout.tsx
-  page.tsx
-
-components/
-  Navbar.tsx
-  ScrollRevealObserver.tsx
-  ScrollSequence.tsx
-  DetailScroll.tsx
-  VideoScroll.tsx
-
-public/
-  frames/
-    video1/
-    video2/
-  images/
-  koenigsegg-logo.svg
-```
-
-## Arquitectura rápida
-
-- `app/page.tsx`
-  Página principal y composición de secciones.
-
-- `components/ScrollSequence.tsx`
-  Hero en canvas con secuencia de frames (`/public/frames/video1`) y títulos sincronizados.
-
-- `components/DetailScroll.tsx`
-  Segunda secuencia de frames (`/public/frames/video2`) con títulos dinámicos.
-
-- `components/ScrollRevealObserver.tsx`
-  Observer global para activar transiciones al entrar en viewport.
-
-- `components/Navbar.tsx`
-  Navegación fija, progreso de scroll y CTA.
-
-## Assets de frames
-
-Las secuencias esperan naming con padding de 4 dígitos:
-
-- `frame_0001.png`, `frame_0002.png`, ...
-
-Ajusta estos valores en los componentes si cambias estructura:
-
-- `PATH`
-- `startFrame`
-- `endFrame`
-- constantes de carga (`LOAD_AHEAD`, `LOAD_BEHIND`, `MAX_CACHE_DISTANCE`)
-
-## Buenas prácticas para mantener rendimiento
-
-- Mantener peso de PNGs bajo control (idealmente optimizados).
-- Evitar subir resolución de frames más allá de lo necesario para pantalla objetivo.
-- Afinar `LOAD_AHEAD`/`LOAD_BEHIND` según red y dispositivo.
-- Revisar `MAX_CACHE_DISTANCE` si observas consumo alto de memoria.
-
-## Deploy
-
-Flujo estándar de Next.js:
-
-```bash
-npm run build
-npm run start
-```
-
-Compatible con plataformas como Vercel o infraestructura Node propia.
-
-## Estado del proyecto
-
-Build de producción verificada correctamente con `npm run build`.
+</div>
