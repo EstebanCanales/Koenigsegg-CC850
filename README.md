@@ -6,6 +6,8 @@ _We build machines that possess a soul, for drivers who understand that mechanic
 
 <br />
 
+<video src="./public/Hero-video.mp4" autoplay loop muted playsinline width="100%"></video>
+
 ![Koenigsegg CC850](./public/Demo.jpg)
 
 <br />
@@ -18,11 +20,11 @@ _We build machines that possess a soul, for drivers who understand that mechanic
 
 ---
 
-## The CC850 doesn't celebrate 50 years of Koenigsegg.
+## The CC850 doesn't celebrate Christian von Koenigsegg's 50th birthday.
 
-## It _is_ 50 years of Koenigsegg.
+## It _is_ his 50th birthday.
 
-A machine born from obsession. 1,385 horsepower. A transmission that shouldn't exist. A legacy pressed into carbon fiber and titanium. This experience was built to make you feel that — not just read it.
+A machine born from obsession. 1,385 hp on E85. A transmission that acts as a 6-speed manual and a 9-speed automatic — simultaneously. A legacy pressed into carbon fiber and titanium. This experience was built to make you feel that — not just read it.
 
 Scroll. And understand.
 
@@ -40,7 +42,7 @@ Scroll. And understand.
 
 **Precision Beyond the Possible** — Stillness under load. Control at the edge of physics.
 
-**Allocated.** — 50 units. Each one spoken for. This page is for everyone else.
+**Allocated.** — 70 units. Each one spoken for. This page is for everyone else.
 
 <br />
 
